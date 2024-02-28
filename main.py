@@ -4,7 +4,7 @@ from threading import Thread
 from PIL import Image, ImageTk
 import pyttsx3
 
-# Initialize text-to-speech engine
+
 engine = pyttsx3.init()
 
 def is_movement(frame1, frame2, threshold=25):
@@ -19,8 +19,8 @@ def show_popup():
     popup = tk.Tk()
     popup.wm_title("Motion Detected!")
 
-    # Load and display an image in Tkinter
-    image_path = 'apiit_fcs_logo.png'  # Replace with your image file path
+
+    image_path = 'apiit_fcs_logo.png'
     img = Image.open(image_path)
     img = ImageTk.PhotoImage(img)
     label = tk.Label(popup, image=img)
